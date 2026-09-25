@@ -1,5 +1,8 @@
 package quarter2.PracticalExam;
 
+import org.junit.Test;
+
+import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
 public class violationnamecomponents {
@@ -102,6 +105,24 @@ public class violationnamecomponents {
                 );
                 System.out.println("Try again.\n");
             }
+        }
+    }
+
+    public static class ViolationTypeTest {
+
+        @Test
+        public void testViolationTypeFeature() {
+            String input = "1001\nUniform Violation\nDetention\nMinor\n";
+            Scanner scanner = new Scanner(new ByteArrayInputStream(input.getBytes()));
+            runFeature(scanner);
+        }
+
+        @Test
+        public void testMainMenuViolationType() {
+            String input = "Minor\nDetention\n";
+            Scanner scanner = new Scanner(new ByteArrayInputStream(input.getBytes()));
+            mainmenu.ViolationType violationType = new mainmenu.ViolationType();
+            violationType.runFeature(scanner);
         }
     }
 }
