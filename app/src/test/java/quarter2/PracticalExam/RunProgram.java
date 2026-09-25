@@ -15,5 +15,6 @@ public class RunProgram {
         mainmenu menu = new mainmenu();
 
         menu.Menu(masterScanner);
+
     }
 }
