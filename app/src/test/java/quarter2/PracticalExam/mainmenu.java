@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 public class mainmenu {
 
+    public void Menu(Scanner masterScanner) {
+    }
+
     public static class ViolationType {
         public void runFeature(Scanner scanner) {
             System.out.print("Enter Violation Type: ");
