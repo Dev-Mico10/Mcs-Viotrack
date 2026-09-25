@@ -1,4 +1,4 @@
-package com.example.mcs_viotrack;
+package quarter2;
 
 import org.junit.Test;
 
@@ -19,5 +19,6 @@ public class Talaocminipeta {
         System.out.println("If I could, I would eat " + favFood + " every single day!");
     }
 }
+
 
 

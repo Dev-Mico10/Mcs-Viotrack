@@ -35,6 +35,13 @@ dependencies {
     implementation(libs.appcompat)
     implementation(libs.material)
     testImplementation(libs.junit)
+    testImplementation(libs.junit.jupiter)
+    testImplementation(libs.junit.vintage.engine)
+    testImplementation(libs.junit.platform.launcher)
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(libs.ext.junit)
+}
+
+tasks.withType<Test> {
+    useJUnitPlatform()
 }
