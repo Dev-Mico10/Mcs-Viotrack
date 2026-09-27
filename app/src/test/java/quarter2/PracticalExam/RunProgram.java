@@ -12,7 +12,7 @@ public class RunProgram {
         Scanner masterScanner = new Scanner(automatedInput);
         mainmenu menu = new mainmenu();
 
-        menu.Menu(masterScanner);
+        menu.displayMenu(masterScanner);
 
     }
 }
