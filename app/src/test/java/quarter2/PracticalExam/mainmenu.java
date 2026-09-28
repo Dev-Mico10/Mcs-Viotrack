@@ -5,6 +5,14 @@ import java.util.Scanner;
 
 public class mainmenu {
 
+    public void menu(Scanner scanner) {
+        displayMenu(scanner);
+    }
+
+    public void start(Scanner scanner) {
+        displayMenu(scanner);
+    }
+
     public static class ViolationType {
         public void runFeature(Scanner scanner) {
             System.out.print("Enter Violation Type: ");
