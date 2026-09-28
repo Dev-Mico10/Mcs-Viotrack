@@ -7,7 +7,7 @@ public class FriasMinipeta {
     @Test
     public void printMYprofile(){
         String myName = "Jhon";
-        String petname = "Choco";
+        String petname = "Chocolate";
         String favfood = "Sinigang";
         int myAge = 17;
 
