@@ -42,5 +42,9 @@ public class violationReport {
             }
         }
     }
+
+    public static void reasonReport(Scanner scanner) {
+
     }
+}
 

@@ -109,6 +109,9 @@ public class violationnamecomponents {
         }
     }
 
+    public static void validViolation(Scanner scanner) {
+    }
+
     public static class ViolationTypeTest {
 
         @Test
