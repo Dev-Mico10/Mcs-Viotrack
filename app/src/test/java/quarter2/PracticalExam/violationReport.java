@@ -17,34 +17,32 @@ public class violationReport {
 
         System.out.println("--- VIOLATION REPORT ---");
 
-        while(reasonReport) {
+        while (reasonReport) {
             System.out.println("Reason for violation reports: " + String.join(", ", reasonForReports));
-            String reason = scanner.nextLine().trim();
+            String reason = scanner.nextLine();
 
             System.out.println("Please enter a reason: ");
-            String reason1 = scanner.nextLine().trim();
+            String reason1 = scanner.nextLine();
 
 
-            boolean reasonisInvalid = false; {
+            boolean reasonisValid = false;
+            {
                 for (String validReason : reasonForReports) {
                     if (reason.equalsIgnoreCase(validReason)) {
-                        reasonisInvalid = true;
+                        reasonisValid = true;
                         break;
                     }
                 }
-                if (reasonisInvalid) {
+                if (!reasonisValid) {
                     System.out.println("Please enter a valid reason");
 
                 } else {
                     System.out.println("Violation report recorded");
                     System.out.println("Reason: " + reason1);
                 }
+                reasonReport = false;
             }
         }
-    }
-
-    public static void reasonReport(Scanner scanner) {
-
     }
 }
 
