@@ -1,10 +1,5 @@
 package quarter2.PracticalExam;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Scanner;
-
-
 public class ViolationHistory {
 
     public static class Record {
