@@ -21,7 +21,7 @@ public class violationReport {
             System.out.println("Reason for violation reports: " + String.join(", ", reasonForReports));
             String reason = scanner.nextLine();
 
-            System.out.println("Please enter a reason: ");
+            System.out.println("Please enter reason: ");
             String reason1 = scanner.nextLine();
 
 
