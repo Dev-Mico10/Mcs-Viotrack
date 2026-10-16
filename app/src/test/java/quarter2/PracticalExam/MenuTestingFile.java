@@ -20,6 +20,8 @@ public class MenuTestingFile {
 
 
 
+
+
         ByteArrayInputStream automaticInput = new ByteArrayInputStream(simulatedInput.getBytes());
 
         Scanner allScanner = new Scanner(automaticInput);

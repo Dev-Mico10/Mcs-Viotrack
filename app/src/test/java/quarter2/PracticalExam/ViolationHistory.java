@@ -1,5 +1,7 @@
 package quarter2.PracticalExam;
 
+import java.util.Scanner;
+
 public class ViolationHistory {
 
     public static class Record {
