@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MCS-Viotrack</string>
+
+    <string name="back">Back</string>
+    <string name="violation_name">Enter Violation Name</string>
+    <string name="violation_category">Enter Violation Category</string>
+    <string name="penalty">Enter Penalty</string>
+    <string name="save_violation">Save Violation</string>
+
 </resources>
