@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Education Portal"
+            android:textColor="#64748B"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Violation History"
+            android:textColor="#17365D"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="View and manage student violation records."
+            android:textColor="#64748B"
+            android:textSize="14sp" />
+
+        <!-- View Violation History -->
+        <Button
+            android:id="@+id/btnViewViolationHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:minHeight="56dp"
+            android:text="View Violation History"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:backgroundTint="#17365D"
+            android:textColor="#FFFFFF" />
+
+        <!-- Fetch Violation Records -->
+        <Button
+            android:id="@+id/btnFetchViolationRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minHeight="56dp"
+            android:text="Fetch Violation Records"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:backgroundTint="#087E8B"
+            android:textColor="#FFFFFF" />
+
+        <!-- Complete History -->
+        <Button
+            android:id="@+id/btnCompleteViolationHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minHeight="56dp"
+            android:text="Complete Violation History Shown"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:backgroundTint="#DCEFE8"
+            android:textColor="#176B55" />
+
+        <!-- Recent Records -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Recent Records"
+            android:textColor="#17365D"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Record 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Late Arrival"
+                android:textColor="#17365D"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="DATE HERE"
+                android:textColor="#64748B"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Status: Reviewed"
+                android:textColor="#087E8B"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Record 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Incomplete Uniform"
+                android:textColor="#17365D"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="DATE HERE"
+                android:textColor="#64748B"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Status: Pending"
+                android:textColor="#B7791F"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
