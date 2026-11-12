@@ -10,7 +10,7 @@
 
 
     <ImageView
-        android:id="@+id/backgroundImage"
+        android:id="@+id/backgroundImage"z
         android:layout_width="579dp"
         android:layout_height="1142dp"
         android:contentDescription="TODO"
