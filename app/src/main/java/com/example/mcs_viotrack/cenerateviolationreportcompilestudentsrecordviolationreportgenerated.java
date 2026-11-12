@@ -8,18 +8,26 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class cenerateviolationreportcompilestudentsrecordviolationreportgenerated extends AppCompatActivity {
+public class cenerateviolationreportcompilestudentsrecordviolationreportgenerated
+        extends AppCompatActivity {
 
     private Button btnGenerateViolationReport;
     private Button btnCompileStudentsRecord;
 
     private TextView tvReportStatus;
     private TextView tvReportMessage;
+    private TextView tvViolationList = findViewById(R.id.btnViewViolationHistory);
+
+    public cenerateviolationreportcompilestudentsrecordviolationreportgenerated() {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.cenerateviolationreportcompilestudentsrecordviolationreportgeneratedcenerateviolationreportcompilestudentsrecordviolationreportgenerated);
+
+        setContentView(
+                R.layout.cenerateviolationreportcompilestudentsrecordviolationreportgeneratedcenerateviolationreportcompilestudentsrecordviolationreportgenerated
+        );
 
         // Initialize buttons
         btnGenerateViolationReport =
@@ -29,15 +37,18 @@ public class cenerateviolationreportcompilestudentsrecordviolationreportgenerate
                 findViewById(R.id.btnCompileStudentsRecord);
 
         // Initialize TextViews
-        tvReportStatus = findViewById(R.id.tvReportStatus);
-        tvReportMessage = findViewById(R.id.tvReportMessage);
+        tvReportStatus =
+                findViewById(R.id.tvReportStatus);
 
-        // Generate Violation Report Button
+        tvReportMessage =
+                findViewById(R.id.tvReportMessage);
+
+        // Generate Violation Report
         btnGenerateViolationReport.setOnClickListener(v -> {
             generateViolationReport();
         });
 
-        // Compile Student Records Button
+        // Compile Students Record
         btnCompileStudentsRecord.setOnClickListener(v -> {
             compileStudentsRecord();
         });
@@ -46,24 +57,33 @@ public class cenerateviolationreportcompilestudentsrecordviolationreportgenerate
     // Generate Violation Report
     private void generateViolationReport() {
 
-        tvReportStatus.setText("Report Status");
-        tvReportMessage.setText(
-                "Violation report generation requested."
+        String violations =
+                ViolationStorage.getViolations(this);
+
+        tvReportStatus.setText(
+                "Violation Report Generated"
         );
+
+        tvReportMessage.setText(
+                "Your saved violation records:"
+        );
+
+        tvViolationList.setText(violations);
 
         Toast.makeText(
                 this,
-                "Generating Violation Report...",
+                "Violation Report Generated!",
                 Toast.LENGTH_SHORT
         ).show();
-
-        // Add your report generation and database retrieval code here.
     }
 
-    // Compile Student Records
+    // Compile Students Record
     private void compileStudentsRecord() {
 
-        tvReportStatus.setText("Record Status");
+        tvReportStatus.setText(
+                "Record Status"
+        );
+
         tvReportMessage.setText(
                 "Student records compilation requested."
         );
@@ -73,7 +93,5 @@ public class cenerateviolationreportcompilestudentsrecordviolationreportgenerate
                 "Compiling Student Records...",
                 Toast.LENGTH_SHORT
         ).show();
-
-        // Add your student records retrieval and compilation code here.
     }
 }
