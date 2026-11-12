@@ -5,7 +5,7 @@
     <string name="back">BACK</string>
     <string name="violation_name">Violation Name</string>
     <string name="violation_category">Violation Category</string>
-    <string name="penalty">Penalty</string>
+    <string name="penalty">Type Penalty</string>
     <string name="save_violation">SAVE VIOLATION</string>
     <string name="todo">TODO</string>
     <string name="enter_username_or_email">Enter Username or Email</string>

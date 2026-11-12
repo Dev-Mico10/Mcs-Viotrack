@@ -8,7 +8,6 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class ViolationStorage {
-
     private static final String PREF_NAME = "ViolationData";
     private static final String KEY_VIOLATIONS = "violations";
 
