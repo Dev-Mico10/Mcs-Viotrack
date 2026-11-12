@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(MainActivity.this,
-                        "Login button is working",
+                        "Login button is working!",
                         Toast.LENGTH_SHORT).show();
             }
         });
