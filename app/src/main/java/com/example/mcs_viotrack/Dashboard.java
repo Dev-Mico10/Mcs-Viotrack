@@ -15,23 +15,22 @@ class DashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard2);
 
-        // Link buttons
+
         btnViewHistory = findViewById(R.id.button3);
         btnGenerateReport = findViewById(R.id.button4);
 
-        // View Violation History — navigate when clicked
+
         btnViewHistory.setOnClickListener(v -> {
             Intent intent = new Intent(DashboardActivity.this, cenerateviolationreportcompilestudentsrecordviolationreportgenerated.class);
             startActivity(intent);
         });
 
-        // Generate Violation Report — navigate when clicked
+
         btnGenerateReport.setOnClickListener(v -> {
-            Intent intent = new Intent(DashboardActivity.this, violationtype.class);
+            Intent intent = new Intent(DashboardActivity.this, ViolationType.class);
             startActivity(intent);
         });
 
-        // Log Out — go back to Login screen
         btnLogout.setOnClickListener(v -> {
             Intent intent = new Intent(DashboardActivity.this, MainActivity.class);
             startActivity(intent);
