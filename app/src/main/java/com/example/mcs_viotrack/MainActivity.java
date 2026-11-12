@@ -2,7 +2,6 @@ package com.example.mcs_viotrack;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -24,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.button);
         forgotPasswordButton = findViewById(R.id.button2);
 
+
         loginButton.setOnClickListener(v -> {
             String user = username.getText().toString().trim();
             String pass = password.getText().toString().trim();
@@ -34,10 +34,18 @@ public class MainActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(MainActivity.this,
-                        "Login button is working!",
+                        "Login successful!",
                         Toast.LENGTH_SHORT).show();
+
+
+                Intent intent = new Intent(MainActivity.this, DashboardActivity.class);
+                startActivity(intent);
+
+
+                finish();
             }
         });
+
 
         forgotPasswordButton.setOnClickListener(v -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
@@ -48,3 +56,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+
