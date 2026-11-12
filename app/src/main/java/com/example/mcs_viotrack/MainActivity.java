@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(MainActivity.this,
-                        "Login successful!",
+                        "Login successful",
                         Toast.LENGTH_SHORT).show();
 
 
