@@ -1,13 +1,16 @@
 <resources>
     <string name="app_name">MCS-Viotrack</string>
 
-    <string name="back">Back</string>
-    <string name="violation_name">Enter Violation Name</string>
-    <string name="violation_category">Enter Violation Category</string>
-    <string name="penalty">Enter Penalty</string>
-    <string name="save_violation">Save Violation</string>
+
+    <string name="back">BACK</string>
+    <string name="violation_name">Violation Name</string>
+    <string name="violation_category">Violation Category</string>
+    <string name="penalty">Penalty</string>
+    <string name="save_violation">SAVE VIOLATION</string>
     <string name="todo">TODO</string>
     <string name="enter_username_or_email">Enter Username or Email</string>
     <string name="enter_password">Enter Password</string>
+
+
 
 </resources>
