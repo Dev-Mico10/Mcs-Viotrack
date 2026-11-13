@@ -7,6 +7,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -19,6 +20,10 @@
         <activity
             android:name=".ViolationReport"
             android:exported="true" />
+        <activity
+            android:name=".ViolationHistory"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
