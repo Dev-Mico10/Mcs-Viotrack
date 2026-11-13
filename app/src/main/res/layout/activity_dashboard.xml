@@ -9,116 +9,89 @@
     tools:context=".Dashboard">
 
     <!-- Background Image -->
-
-    <!-- Welcome Text -->
     <ImageView
         android:id="@+id/backgroundImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:src="@drawable/loginbackground"
         android:contentDescription="Background"
         android:scaleType="centerCrop"
-        android:src="@drawable/loginbackground"
-        tools:ignore="VisualLintBounds"
-        tools:layout_editor_absoluteX="62dp"
-        tools:layout_editor_absoluteY="0dp" />
+        tools:ignore="VisualLintBounds" />
 
-    <!-- Dashboard Title -->
-
+    <!-- Welcome Text -->
     <TextView
         android:id="@+id/editTextText"
-        android:layout_width="320dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#4B0082"
-        android:elevation="4dp"
-        android:gravity="center"
-        android:paddingVertical="18dp"
         android:text="WELCOME STUDENT!"
         android:textColor="#000000"
-        android:textColorHighlight="#000000"
-        android:textSize="24sp"
+        android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/backgroundImage"
+        android:layout_marginTop="56dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.055" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Subtitle -->
-
-    <!-- View Violation History Button -->
+    <!-- Dashboard Title -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:backgroundTint="#3F51B5"
-        android:elevation="3dp"
-        android:paddingHorizontal="36dp"
-        android:paddingVertical="10dp"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="8dp"
         android:text="DASHBOARD"
-        android:textColor="#000000"
+        android:textColor="#040202"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextText"
-        app:layout_constraintVertical_bias="0.003" />
+        app:layout_constraintTop_toBottomOf="@id/editTextText" />
 
-    <!-- Generate Violation Report Button -->
-
+    <!-- Subtitle -->
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:background="#F0F0F0"
-        android:paddingHorizontal="20dp"
-        android:paddingVertical="8dp"
         android:text="What would you like to do?"
-        android:textColor="#212121"
-        android:textSize="17sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="@+id/backgroundImage"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@id/textView" />
 
+    <!-- View Violation History Button -->
     <Button
         android:id="@+id/button3"
-        android:layout_width="320dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="48dp"
         android:backgroundTint="#512DA8"
         android:text="VIEW VIOLATION HISTORY"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/backgroundImage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
 
+    <!-- Generate Violation Report Button -->
     <Button
         android:id="@+id/button4"
-        android:layout_width="320dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#303F9F"
         android:text="GENERATE VIOLATION REPORT"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/backgroundImage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@id/button3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
