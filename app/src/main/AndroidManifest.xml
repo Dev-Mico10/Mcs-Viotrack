@@ -11,7 +11,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DashboardActivity"
+            android:name=".Dashboard"
             android:exported="true" />
         <activity
             android:name=".ViolationType"

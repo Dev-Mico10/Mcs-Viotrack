@@ -8,7 +8,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+class MainActivity extends AppCompatActivity {
 
     EditText username, password;
     Button loginButton, forgotPasswordButton;
@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.button);
         forgotPasswordButton = findViewById(R.id.button2);
 
-
         loginButton.setOnClickListener(v -> {
             String user = username.getText().toString().trim();
             String pass = password.getText().toString().trim();
@@ -37,15 +36,11 @@ public class MainActivity extends AppCompatActivity {
                         "Login successful",
                         Toast.LENGTH_SHORT).show();
 
-
-                Intent intent = new Intent(MainActivity.this, DashboardActivity.class);
+                Intent intent = new Intent(MainActivity.this, Dashboard.class);
                 startActivity(intent);
-
-
                 finish();
             }
         });
-
 
         forgotPasswordButton.setOnClickListener(v -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);

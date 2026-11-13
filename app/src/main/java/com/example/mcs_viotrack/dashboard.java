@@ -6,35 +6,30 @@ import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
-class DashboardActivity extends AppCompatActivity {
+class Dashboard extends AppCompatActivity {
 
-    Button btnViewHistory, btnGenerateReport, btnLogout;
+    Button btnViewHistory, btnGenerateReport;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard2);
+        setContentView(R.layout.activity_dashboard);
 
-
+        // Link buttons to your XML IDs — exactly matching your layout
         btnViewHistory = findViewById(R.id.button3);
         btnGenerateReport = findViewById(R.id.button4);
 
-
+        // View Violation History Button
         btnViewHistory.setOnClickListener(v -> {
-            Intent intent = new Intent(DashboardActivity.this, cenerateviolationreportcompilestudentsrecordviolationreportgenerated.class);
+            Intent intent = new Intent(Dashboard.this, ViolationStorage.class);
             startActivity(intent);
         });
 
-
+        // Generate Violation Report Button
         btnGenerateReport.setOnClickListener(v -> {
-            Intent intent = new Intent(DashboardActivity.this, ViolationType.class);
+            Intent intent = new Intent(Dashboard.this, ViolationType.class);
             startActivity(intent);
-        });
-
-        btnLogout.setOnClickListener(v -> {
-            Intent intent = new Intent(DashboardActivity.this, MainActivity.class);
-            startActivity(intent);
-            finish();
         });
     }
 }
+
