@@ -17,6 +17,9 @@
             android:name=".ViolationType"
             android:exported="true" />
         <activity
+            android:name=".ViolationStorage"
+            android:exported="true"/>
+        <activity
             android:name=".ViolationReport"
             android:exported="true" />
     </application>

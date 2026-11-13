@@ -1,16 +1,24 @@
-
 package com.example.mcs_viotrack;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
-
+import android.os.Bundle;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-public class ViolationStorage {
-    private static final String PREF_NAME = "ViolationData";
+public class ViolationStorage extends Activity {
+
+    static final String PREF_NAME = "ViolationData";
     private static final String KEY_VIOLATIONS = "violations";
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_viewviolationhistory_fetchviolationrecords_completeviolationhistoryshown);
+    }
+
+    // Save a new violation
     public static boolean saveViolation(
             Context context,
             String name,
@@ -18,19 +26,15 @@ public class ViolationStorage {
             String penalty) {
 
         try {
-            SharedPreferences prefs =
-                    context.getSharedPreferences(
-                            PREF_NAME,
-                            Context.MODE_PRIVATE
-                    );
+            SharedPreferences prefs = context.getSharedPreferences(
+                    PREF_NAME,
+                    Context.MODE_PRIVATE
+            );
 
-            String oldData =
-                    prefs.getString(KEY_VIOLATIONS, "[]");
-
+            String oldData = prefs.getString(KEY_VIOLATIONS, "[]");
             JSONArray records = new JSONArray(oldData);
 
             JSONObject violation = new JSONObject();
-
             violation.put("name", name);
             violation.put("category", category);
             violation.put("penalty", penalty);
@@ -49,51 +53,17 @@ public class ViolationStorage {
         }
     }
 
+    // ✅ NEW: Read all saved violations
     public static String getViolations(Context context) {
-
-        SharedPreferences prefs =
-                context.getSharedPreferences(
-                        PREF_NAME,
-                        Context.MODE_PRIVATE
-                );
-
-        String data = prefs.getString(KEY_VIOLATIONS, "[]");
-
-        StringBuilder result = new StringBuilder();
-
         try {
-            JSONArray records = new JSONArray(data);
-
-            if (records.length() == 0) {
-                return "No saved violations yet.";
-            }
-
-            for (int i = 0; i < records.length(); i++) {
-
-                JSONObject item = records.getJSONObject(i);
-
-                result.append("VIOLATION ")
-                        .append(i + 1)
-                        .append("\n");
-
-                result.append("Name: ")
-                        .append(item.optString("name"))
-                        .append("\n");
-
-                result.append("Category: ")
-                        .append(item.optString("category"))
-                        .append("\n");
-
-                result.append("Penalty: ")
-                        .append(item.optString("penalty"))
-                        .append("\n\n");
-            }
-
+            SharedPreferences prefs = context.getSharedPreferences(
+                    PREF_NAME,
+                    Context.MODE_PRIVATE
+            );
+            return prefs.getString(KEY_VIOLATIONS, "[]");
         } catch (Exception e) {
-            return "Unable to load violation records.";
+            e.printStackTrace();
+            return "[]";
         }
-
-        return result.toString();
     }
 }
-

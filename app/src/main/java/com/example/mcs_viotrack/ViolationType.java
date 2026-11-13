@@ -1,6 +1,7 @@
 
 package com.example.mcs_viotrack;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -8,7 +9,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ViolationType extends AppCompatActivity {
+public class ViolationType extends Activity {
 
     private EditText name;
     private EditText category;
