@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class cenerateviolationreportcompilestudentsrecordviolationreportgenerated
+public class ViolationReport
         extends AppCompatActivity {
 
     private Button btnGenerateViolationReport;
@@ -18,7 +18,7 @@ public class cenerateviolationreportcompilestudentsrecordviolationreportgenerate
     private TextView tvReportMessage;
     private TextView tvViolationList = findViewById(R.id.btnViewViolationHistory);
 
-    public cenerateviolationreportcompilestudentsrecordviolationreportgenerated() {
+    public ViolationReport() {
     }
 
     @Override
@@ -26,7 +26,7 @@ public class cenerateviolationreportcompilestudentsrecordviolationreportgenerate
         super.onCreate(savedInstanceState);
 
         setContentView(
-                R.layout.cenerateviolationreportcompilestudentsrecordviolationreportgeneratedcenerateviolationreportcompilestudentsrecordviolationreportgenerated
+                R.layout.violationreport
         );
 
         // Initialize buttons
