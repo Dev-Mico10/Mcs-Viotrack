@@ -51,10 +51,10 @@ public class MainActivity extends Activity {
         // ✅ FIXED Forgot Password — Using Simple Dialog Instead
         forgotPasswordText.setOnClickListener(v -> {
             Dialog dialog = new Dialog(MainActivity.this);
-            dialog.setContentView(R.layout.);
+            dialog.setContentView(R.layout.forgotpassword);
             dialog.setCancelable(true);
 
-            Button okButton = dialog.findViewById(R.id.button);
+            Button okButton = dialog.findViewById(R.id.btn_ok);
             okButton.setOnClickListener(btn -> dialog.dismiss());
 
             dialog.show();

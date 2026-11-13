@@ -15,7 +15,7 @@ public class ViolationStorage extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_viewviolationhistory_fetchviolationrecords_completeviolationhistoryshown);
+        setContentView(R.layout.activity_violation_history);
     }
 
     // Save a new violation
