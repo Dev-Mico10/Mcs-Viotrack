@@ -27,7 +27,7 @@ public class Dashboard extends Activity {
 
         // Generate Violation Report Button
         btnGenerateReport.setOnClickListener(v -> {
-            Intent intent = new Intent(Dashboard.this, ViolationType.class);
+            Intent intent = new Intent(Dashboard.this, ViolationReport.class);
             startActivity(intent);
         });
     }

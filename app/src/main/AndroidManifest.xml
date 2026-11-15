@@ -25,7 +25,7 @@
             android:exported="true" />
         <activity
             android:name=".ViolationHistory"
-            android:exported="false"
+            android:exported="true"
             android:windowSoftInputMode="adjustResize" />
     </application>
 

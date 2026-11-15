@@ -59,13 +59,12 @@
 
     <ImageView
         android:id="@+id/iconPerson"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="@id/editTextTextEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/editTextTextEmailAddress"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/humanicon" />
 
     <EditText
@@ -88,8 +87,8 @@
 
     <ImageView
         android:id="@+id/iconLock"
-        android:layout_width="32dp"
-        android:layout_height="45dp"
+        android:layout_width="44dp"
+        android:layout_height="53dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
